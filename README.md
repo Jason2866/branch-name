@@ -11,9 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - run: npm ci
-    - uses: nelonoel/branch-name@v1.0.1
+    - uses: jason2866/branch-name@master
     # Use branch name for whatever purpose
     - run: echo ${BRANCH_NAME}
 ```
